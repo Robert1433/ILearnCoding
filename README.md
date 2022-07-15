@@ -12,7 +12,6 @@ Link tutorials:https://www.w3schools.com/<br>
 Run project:<br>
   in cmd: py manage.py runserver<br>
   in another cmd: cd Compiler Algo<br>
-    in the same cmd run: npm install<br>
     in the same cmd run: node index<br>
     <br>
     Back-end: Draghita Claudiu Ionut<br>
