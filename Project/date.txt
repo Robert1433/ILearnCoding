@@ -1,0 +1,59 @@
+Teacher: 
+TeacherAlexandru(username)
+Alexandru(last name)
+Popescu(first name)
+alexpopescu@gmail.com
+password: learningalex
+
+
+Student:
+StudentCristian
+Cristian(last name)
+Hategan(first name)
+cristihategan@gmail.com
+password: ionut2803
+
+
+Homechat nume general camera
+username: acelasi ca la utilizator
+
+TeacherAlexRoom nume camera 
+
+Code:	 	c++:
+#include <iostream>
+using namespace std;
+
+int main() {
+  int number;
+  cin >> number;
+  if (number > 0) {
+    cout << "You entered a positive integer: " << number << endl;
+  }
+  return 0;
+}
+
+java:
+public class SwapNumbers {
+
+    public static void main(String[] args) {
+
+        float first = 1.20f, second = 2.45f;
+
+        System.out.println("--Before swap--");
+        System.out.println("First number = " + first);
+        System.out.println("Second number = " + second);
+
+        
+        float temporary = first;
+
+    
+        first = second;
+
+      
+        second = temporary;
+
+        System.out.println("--After swap--");
+        System.out.println("First number = " + first);
+        System.out.println("Second number = " + second);
+    }
+}

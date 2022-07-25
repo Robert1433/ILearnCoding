@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{%load static%}
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student`s home</title>
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="{% static 'style/nav.css'%}">
+</head>
+<body>
+	<div class="sidebar">
+		<div class="logo-details">
+			<div class="logo_name">ILearnCoding</div>
+			<i class='bx bx-menu' id="btn" ></i>
+		</div>
+		<ul class="nav-list">
+		 	
+		 <li>
+			<a href="{%url 'ctutorial2'%}">
+			  <i class='bx bx-book-bookmark' ></i>
+			  <span class="links_name">Tutorials</span>
+			</a>
+			<span class="tooltip">Tutorials</span>
+		  </li>
+		  <li>
+			<a href="{%url 'library'%}">
+			  <i class='bx bx-book-open' ></i>
+			  <span class="links_name">Library</span>
+			</a>
+			<span class="tooltip">Library</span>
+		  </li>
+		  <li>
+			<a href="{%url 'chathome'%}">
+			  <i class='bx bx-chat'></i>
+			  <span class="links_name">Messages</span>
+			</a>
+			<span class="tooltip">Messages</span>
+		  </li>	
+		 <li>
+		   <a href="{% url 'displaycourseasstudent'%}">
+			 <i class='bx bx-folder' ></i>
+			 <span class="links_name">Courses</span>
+		   </a>
+		   <span class="tooltip">Course</span>
+		 </li> 
+		 <li>
+			<a href="{%url 'editor'%}">
+			  <i class='bx bx-code-alt' ></i>
+			  <span class="links_name">Editor</span>
+			</a>
+			<span class="tooltip">Editor</span>
+		  </li>
+		 <li>
+		   <a href="{%url 'settings'%}">
+			 <i class='bx bx-cog' ></i>
+			 <span class="links_name">Settings</span>
+		   </a>
+		   <span class="tooltip">Settings</span>
+		 </li>
+		 {%if user.is_authenticated%}
+		 <li>
+		  <a href="{%url 'Logout'%}">
+			<i class='bx bx-log-out' id="log_out" ></i>
+			<span class="links_name">Logout</span>
+		  </a>
+		  <span class="tooltip">Logout</span>
+		</li>
+		{%else%}
+		<li>
+		  <a href="{%url 'authfstudent'%}">
+			<i class='bx bx-cog' ></i>
+			<span class="links_name">Register</span>
+		  </a>
+		  <span class="tooltip">Register</span>
+		</li>
+		{%endif%}
+		</ul>
+	  </div>
+	
+	  <section class="home-section">
+			
+		  <div class="text">{%block content%}{%endblock%}</div>
+	  </section>
+
+	<script src="{% static 'JS/navbar.js'%}"></script>
+	 
+</body>
+</html>

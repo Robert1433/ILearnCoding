@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Python tutorial</title>
+	{%load static%}
+    <link rel="stylesheet" href="{%static 'assets/bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/Footer-with-Pricing.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/styles.css'%}">
+</head>
+
+<body style="background-color: #212529;">
+
+    <footer class="text-white bg-dark">
+        <div class="container py-4 py-lg-5">
+            <h2 class="fw-bold text-center text-muted mb-5">Learn Python</h2>
+            <div class="row gy-3 row-cols-1 row-cols-md-4 my-5">
+                <div class="col">
+                    <div class="card text-dark pricing-card">
+                        <div class="card-body p-4 px-3 px-lg-4">
+                            <h4 class="fs-3 fw-bold card-title">Example</h4>
+                            <pre class="text-muted card-text pricing-description">
+                               
+print("Hello, World!")
+                            </pre>
+                            <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    </svg></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark pricing-card">
+                        <div class="card-body p-4 px-3 px-lg-4">
+                            <h4 class="fs-3 fw-bold card-title">Python Syntax</h4>
+                            <p class="text-muted card-text pricing-description"><b>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</b><br>
+<pre>
+    >>> print("Hello, World!")
+Hello, World!
+</pre>
+                            </p>
+                            <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    </svg></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark pricing-card">
+                        <div class="card-body p-4 px-3 px-lg-4">
+                            <h4 class="fs-3 fw-bold card-title">Variables</h4>
+                            <p class="text-muted card-text pricing-description">
+                                <b>Python has no command for declaring a variable.<br>
+                                    A variable is created the moment you first assign a value to it.</b><br>
+<pre>
+x = 4       #x is of type int
+x = "Sally" #x is now of type str
+print(x)
+</pre>
+                                </p>
+                            <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    </svg></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark pricing-card">
+                        <div class="card-body p-4 px-3 px-lg-4">
+                            <h4 class="fs-3 fw-bold card-title">Python Comments</h4>
+                            <p class="text-muted card-text pricing-description"><b>Comments can be used to explain Python code.<br>
+
+                                Comments can be used to make the code more readable.<br>
+                                
+                                Comments can be used to prevent execution when testing code.</b></p>
+<pre>
+Comments starts with a #,<br> and Python will ignore them:
+
+    Example
+#This is a comment
+print("Hello, World!")
+</pre>
+                            <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    </svg></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">Python Data Types</h4>
+                        <p class="text-muted card-text pricing-description"><b>Variables can store data of different types, and different types can do different things.</b><br>
+
+
+<pre>
+    Example                                  Data Type	
+x = "Hello World"                               str	
+x = 20                                          int	
+x = 20.5                                        float	
+x = 1j	                                        complex	
+x = ["apple", "banana", "cherry"]               list	
+x = ("apple", "banana", "cherry")               tuple	
+x = range(6)                                    range	
+x = {"name" : "John", "age" : 36}               dict	
+x = {"apple", "banana", "cherry"}               set	
+x = frozenset({"apple", "banana", "cherry"})	frozenset	
+x = True                                        bool	
+x = b"Hello"                                    bytes	
+x = bytearray(5)                                bytearray	
+x = memoryview(bytes(5))                        memoryview	
+x = None                                        NoneType
+
+</pre>
+                            </p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">Python Lists</h4>
+                        <p class="text-muted card-text pricing-description" ><b>Lists are used to store multiple items in a single variable.<br></b>
+
+<pre>
+    Example
+    <b>Create a List:</b>
+    
+    thislist = ["apple", "banana", "cherry"]
+    print(thislist)
+
+    <b>Access Items</b>
+
+    Example
+Print the second item of the list:
+
+thislist = ["apple", "banana", "cherry"]
+print(thislist[1])
+
+</pre>
+
+                        </p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">Python Dictionaries</h4>
+                        <p class="text-muted card-text pricing-description" ><b>Dictionaries are used to store data values in key:value pairs.<br></b>
+<pre>
+    Example                                          <b>Change Values</b>
+Create and print a dictionary:                    You can change the value of a specific item by referring to its key name:
+thisdict = {                                           Change the "year" to 2018:
+  "brand": "Ford",                                   thisdict = {
+  "model": "Mustang",                                      "brand": "Ford",
+  "year": 1964                                             "model": "Mustang",
+}                                                          "year": "1964"
+print(thisdict)                                            }
+                                                     thisdict["year"] = 2018
+</pre>
+</p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">Python If ... Else</h4>
+                        <p class="text-muted card-text pricing-description" ><b>Python Conditions and If statements</b>
+<pre>
+    Python supports the usual logical conditions from mathematics:
+
+    Equals: a == b
+    Not Equals: a != b
+    Less than: a < b
+    Less than or equal to: a <= b
+    Greater than: a > b
+    Greater than or equal to: a >= b
+
+    Example
+If statement:
+
+a = 33
+b = 200
+if b > a:
+  print("b is greater than a")
+
+</pre>
+                        </p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <br>   
+
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">Python For Loops</h4>
+                        <p class="text-muted card-text pricing-description" ><b>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a string).</b>
+<pre>
+    Example
+    Print each fruit in a fruit list:
+    
+    fruits = ["apple", "banana", "cherry"]
+    for x in fruits:
+      print(x)
+
+      <b>Example: (Exit the loop when x is "banana")</b>
+      Exit the loop when x is "banana":
+      
+      fruits = ["apple", "banana", "cherry"]
+      for x in fruits:
+        print(x)
+        if x == "banana":
+          break
+
+</pre>
+                        </p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">Python While Loops</h4>
+                        <p class="text-muted card-text pricing-description" ><b>Python has two primitive loop commands:</b>
+<pre>
+    <b>The while Loop</b>
+    With the while loop we can execute a set of statements as long as a condition is true.
+    
+    Example
+    Print i as long as i is less than 6:
+    
+    i = 1
+    while i < 6:
+      print(i)
+      i += 1
+
+      <b>The else Statement</b>
+With the else statement we can run a block of code once when the condition no longer is true:
+
+Example
+Print a message once the condition is false:
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+else:
+  print("i is no longer less than 6")
+</pre>
+                        </p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row my-5">
+                <div class="col text-center">
+                    <p class="fs-5 fw-bold text-muted">What are you waiting for?</p>
+                    <h3 class="display-4 fw-bold mb-5">Start doing exercises in our editor.</h3><a href="http://localhost:1337/" style="text-decoration: none;"><button class="btn bg-white" type="button" style="margin:10px;">Practice</button></a><a href = "{%url 'java'%}" style="text-decoration: none;" ><button class="btn bg-white" type="button">Next Java tutorial</button></a>
+                </div>
+            </div>
+            
+            
+    </footer>
+    <script src="{% static 'assets/bootstrap/js/bootstrap.min.js'%}"></script>
+</body>
+
+</html>

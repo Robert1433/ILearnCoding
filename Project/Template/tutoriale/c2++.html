@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>C++ tutorial</title>
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{%static 'assets/css/Footer-with-Pricing.css'%}">
+    <link rel="stylesheet" href="{%static 'assets/css/styles.css'%}">
+</head>
+
+<body style="background-color: #212529;">
+
+    <footer class="text-white bg-dark">
+        <div class="container py-4 py-lg-5">
+            <h2 class="fw-bold text-center text-muted mb-5">This is C++</h2>
+            <div class="row gy-3 row-cols-1 row-cols-md-4 my-5">
+                <div class="col">
+                    <div class="card text-dark pricing-card">
+                        <div class="card-body p-4 px-3 px-lg-4">
+                            <h4 class="fs-3 fw-bold card-title">Example</h4>
+                            <pre class="text-muted card-text pricing-description">
+                               
+#include <iostream>
+using namespace std;
+    int main() {
+  std::cout << "Hello World!";
+ return 0;
+}
+                            </pre>
+                            <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2"></svg></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark pricing-card">
+                        <div class="card-body p-4 px-3 px-lg-4">
+                            <h4 class="fs-3 fw-bold card-title">C++ Output</h4>
+                            <p class="text-muted card-text pricing-description"><b>The cout object, together with the "<<" operator, is used to output values/print text:</b><br>
+
+                               <br>
+                                #include <iostream><br>
+                                using namespace std;<br>
+                                
+                                int main() {<br>
+                                  cout << "Hello World!";<br>
+                                  return 0;<br>
+                                }<br></p>
+                            <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                        
+                                    </svg></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark pricing-card">
+                        <div class="card-body p-4 px-3 px-lg-4">
+                            <h4 class="fs-3 fw-bold card-title">C++ Variables</h4>
+                            <!--<h6 class="card-subtitle mb-2"><span style="color: rgb(32, 33, 36);">Variables are containers for storing data values.</span></h6>-->
+                            <p class="text-muted card-text pricing-description">
+                                <b>Variables are containers for storing data values.</b><br>
+                                int - stores integers<br>
+                                double - stores floating point numbers<br>
+                                char - stores single characters<br>
+                                string - stores text<br>
+                                bool - stores values with two states: true or false<br><br><br></p>
+                            <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                        
+                                    </svg></button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card text-dark pricing-card">
+                        <div class="card-body p-4 px-3 px-lg-4">
+                            <h4 class="fs-3 fw-bold card-title">C++ User Input</h4>
+                            <p class="text-muted card-text pricing-description">
+<b>cin is a predefined variable that reads data from the keyboard with the extraction operator(>>).</b><br>
+
+Example<br>
+int x;<br>
+cout << "Type a number: "; // Type a number and press enter<br>
+cin >> x; // Get user input from the keyboard<br>
+cout << "Your number is: " << x; // Display the input value  </p>
+                            <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                        
+                                    </svg></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">C++ Strings</h4>
+                        <p class="text-muted card-text pricing-description"><b>Strings are used for storing text.</b><br>
+
+
+<pre>
+    A string variable contains a collection of characters surrounded by double quotes:
+                            
+    Example
+    Create a variable of type string and assign it a value:
+    string greeting = "Hello";
+
+</pre>
+                            </p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                   
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">C++ Conditions and If Statements</h4>
+                        <p class="text-muted card-text pricing-description" ><b>C++ supports the usual logical conditions from mathematics:<br></b>
+
+<pre>
+Less than: a < b
+Less than or equal to: a <= b
+Greater than: a > b
+Greater than or equal to: a >= b
+Equal to a == b
+Not Equal to: a != b
+You can use these conditions to perform different actions for different decisions.
+
+C++ has the following conditional statements:
+
+Use if to specify a block of code to be executed, if a specified condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+Use switch to specify many alternative blocks of code to be executed
+
+</pre>
+
+                        </p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">C++ Switch Statements</h4>
+                        <p class="text-muted card-text pricing-description" ><b>Use the switch statement to select one of many code blocks to be executed.                            <br></b>
+<pre>
+         <b>Syntax</b>
+switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
+</pre>
+</p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">C++ While Loop</h4>
+                        <p class="text-muted card-text pricing-description" ><b>The while loop loops through a block of code as long as a specified condition is true:</b>
+<pre>
+    <b>Syntax</b>>
+while (condition) {
+  // code block to be executed
+}
+
+</pre>
+                        </p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <br>   
+
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">C++ For Loop</h4>
+                        <p class="text-muted card-text pricing-description" ><b>When you know exactly how many times you want to loop through a block of code, use the for loop instead of a while loop:</b>
+<pre>
+             <b>Syntax</b>
+    for (statement 1; statement 2; statement 3) {
+      // code block to be executed
+    }
+
+</pre>
+                        </p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="col">
+                <div class="card text-dark pricing-card">
+                    <div class="card-body p-4 px-3 px-lg-4">
+                        <h4 class="fs-3 fw-bold card-title">C++ Classes/Objects</h4>
+                        <p class="text-muted card-text pricing-description" ><b>Everything in C++ is associated with classes and objects, along with its attributes and methods.<br> For example: in real life, a car is an object. The car has attributes, such as weight and color, and methods, such as drive and brake.</b>
+<pre>
+       <b>Syntax</b>
+class MyClass {       // The class
+     public:             // Access specifier
+       int myNum;        // Attribute (int variable)
+       string myString;  // Attribute (string variable)
+      };
+
+</pre>
+                        </p>
+                        <div class="d-flex justify-content-end"><button class="btn border rounded-circle border-0" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right-short fs-2">
+                                    
+                                </svg></button></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row my-5">
+                <div class="col text-center">
+                    <p class="fs-5 fw-bold text-muted">What are you waiting for?</p>
+                    <h3 class="display-4 fw-bold mb-5">Start doing exercises in our editor.</h3><a href="http://localhost:1337/" style="text-decoration: none;"><button class="btn bg-white" type="button" style="margin:10px;">Practice</button></a><a href = "{%url 'python2'%}" style="text-decoration: none;" ><button class="btn bg-white" type="button">Next Python tutorial</button></a>
+                </div>
+            </div>
+            
+            
+    </footer>
+    <script src="{%static 'assets/bootstrap/js/bootstrap.min.js'%}"></script>
+</body>
+
+</html>
