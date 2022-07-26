@@ -4,7 +4,7 @@ let bodyParser = require("body-parser");
 let compiler = require("compilex");
 
 let options = {stats : true};
-compiler.init(options);
+compiler.init(options); 
 let app = express();
 app.use(bodyParser());
 app.get("/", function (req, res) {

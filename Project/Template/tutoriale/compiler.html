@@ -22,7 +22,7 @@
       
     }
     .code-area textarea{
-      resize: none; outline: none; width: 100%; height: 33.3%; font-size:18px; padding: 10px;
+      resize: none; outline: none; width: 100%; height:100%; font-size:18px; padding: 10px;
     }
     .preview-area{
       width:50%;
@@ -35,22 +35,18 @@
 <body>
   
   <div class="code-area">
-    <textarea id="htmlCode" placeholder="HTML Code" oninput = "showNOW()"></textarea>
-    <textarea id="cssCode" placeholder="CSS Code" oninput = "showNOW()"></textarea>
-    <textarea id="jsCode" placeholder="JS Code" oninput = "showNOW()"></textarea>
+    <textarea id="htmlCode" placeholder="HTML, CSS and JS Code...type now" oninput = "shownow()"></textarea>
   </div> 
   <div class="preview-area">
     <iframe id="preview-window"></iframe>
   </div>
   <a href="http://localhost:1337/" style="background-color: #28313b;padding:6px; border-radius:5px; border:none;font-size:28px; color:white; text-decoration:none;text-align:center;">Algorithms editor</a>
-  <script>
-    function showNOW(){
+  <script type="text/javascript">
+    function shownow(){
       let htmlCode = document.getElementById("htmlCode").value;
-      let cssCode = "<style>" + document.getElementById("cssCode").value + "</style>";
-      let jsCode = "<scri" + "pt" + document.getElementById("jsCode").value + "</scri" + "pt";
       var frame = document.getElementById("preview-window").contentWindow.document;
       frame.open();
-      frame.write(htmlCode + cssCode + jsCode)
+      frame.write(htmlCode)
       frame.close();
     }
   </script>
